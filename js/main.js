@@ -4,11 +4,7 @@ document.querySelector('.uil-bars').addEventListener('click', () => {
     const navBar = document.querySelector('.nav-bar')
     navBar.classList.toggle('hidden')
 })
-// scroll shadow
-// window.onscroll = function(){
-//     const navHeader = document.getElementById('header')
-//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-// }
+// header scroll shadow
 document.addEventListener('scroll', () => {
     let lastKnownScrollPosition = window.scrollY
     console.log(lastKnownScrollPosition)
