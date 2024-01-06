@@ -272,7 +272,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
     width: 50%;
 }
 .about-info{
@@ -388,5 +387,27 @@ header{
     .hero-image, .hero-image img{
         width: 150px;
         height: 150px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-info{
+        width: 100%;
+    }
+    .skills-info{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 540px){
+    .hero-name{
+        font-size: 40px;
     }
 }
