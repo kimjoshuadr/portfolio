@@ -259,7 +259,7 @@ header{
 /******************************************
 /* ABOUT
 /*******************************************/
-.about-section{
+.section{
     padding-block: 5em;
 }
 .row{
@@ -380,21 +380,105 @@ header{
 .project-icons .icon{
     background: var(--color-white);
 }
-.project-image::after{
+.project-image::after, .contact-info::after{
     content: "";
     position: absolute;
-    bottom: -100%;
+    bottom: -101%;
     backdrop-filter: blur(10px);
     width: 100%;
     height: 100%;
     transition: 0.4s;
     z-index: 1;
 }
-.project-image:hover.project-image::after{
+.project-image:hover.project-image::after, .contact-info:hover.contact-info::after{
     bottom: 0;
 }
 .project-image:hover.project-image .project-icons{
     top: 45%;
+}
+/******************************************
+/* CONTACT
+/*******************************************/
+.contact-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    height: 315px;
+    background: var(--second-color);
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+}
+.contact-info h2{
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contact-info p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-white);
+    margin-block: 5px;
+}
+.contact-info p i{
+    font-size: 18px;
+}
+.contact-info::after{
+    background: var(--color-white);
+}
+.contact-info:hover.contact-info h2, .contact-info:hover.contact-info p, .contact-info:hover.contact-info i{
+    color: #777;
+    z-index: 2;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.form-inputs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.input-field{
+    width: 50%;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #AAA;
+    padding-inline: 20px;
+    outline: none;
+    border-radius: 10px;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid #AAA;
+    padding: 15px 20px;
+    outline: none;
+    border-radius: 10px;
+    resize: none;
+}
+.form-button .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+    color: var(--color-white);
+}
+.form-button .btn:hover{
+    background: #00B5E7;
+}
+.form-button i{
+    font-size: 18px;
+    rotate: -45deg;
 }
 /******************************************
 /* MEDIA QUERIES
@@ -474,7 +558,7 @@ header{
         justify-content: center;
         width: 100%;
     }
-    .about-info{
+    .about-info, .contact-info{
         width: 100%;
     }
     .skills-info{
@@ -492,6 +576,12 @@ header{
         font-size: 40px;
     }
     .project-card{
+        width: 100%;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
         width: 100%;
     }
 }
