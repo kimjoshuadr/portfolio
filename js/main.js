@@ -7,7 +7,6 @@ document.querySelector('.uil-bars').addEventListener('click', () => {
 // header scroll shadow
 document.addEventListener('scroll', () => {
     let lastKnownScrollPosition = window.scrollY
-    console.log(lastKnownScrollPosition)
     const navHeader = document.getElementById('header')
 
     if (lastKnownScrollPosition > 50) {
