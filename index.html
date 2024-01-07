@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +20,13 @@
     <!------------ Header -------------->
         <header id="header">
             <div class="header-logo">
-                <span class="header-name">Kim Joshua</span>
+                <p class="header-name">Kim Joshua</p>
                 <span>.</span>
             </div>
             <nav class="nav-bar">
                 <ul class="nav-bar-list">
                     <li class="nav-list">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link active-section">Home</a>
                         <div class="circle"></div>
                     </li>
                     <li class="nav-list">
@@ -51,170 +50,173 @@
                 <i class="uil uil-bars"></i>
             </div>
         </header>
-    </div>
-    <main class="wrapper">
-    <!------------ Hero Section ------------>
-        <section class="hero-section" id="home">
-            <div class="hero-highlight">
-                <div class="hero-name">
-                    <span>Kim Joshua Delos Reyes</span>
-                </div>
-                <div class="hero-text">
-                    <p>I'm <span class="animated-text"></span></p>
-                </div>
-                <div class="hero-text-info">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi vel ipsa dicta deserunt, illum repudiandae explicabo unde, eaque reiciendis, eum distinctio laboriosam aspernatur ad sapiente ipsam minus expedita earum maiores?</p>
-                </div>
-                <div class="hero-text-button">
-                    <button class="btn btn-blue">Hire Me</button>
-                    <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
-                </div>
-                <div class="social-icons">
-                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                    <div class="icon"><i class="uil uil-github-alt"></i></i></div>
-                </div>
-            </div>
-            <div class="hero-image-section">
-                <div class="hero-image">
-                    <img src="/img/logo.jpeg" alt="avatar">
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <a href="#about" class="scroll-btn"><i class="uil uil-mouse-alt"></i><span>Scroll Down</span></a>
-            </div>
-        </section>
-    <!------------ About Section ------------>
-        <section class="section" id="about">
-            <div class="top-header">
-                <h1>About Me</h1>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="about-info">
-                        <h3>My Introduction</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aut quia obcaecati exercitationem ipsam minima accusantium odit error, molestias nobis temporibus nulla in fugit repudiandae sit officiis, recusandae enim possimus.</p>
-                        <div class="about-button">
-                            <button class="btn">Download CV <i class="uil uil-import"></i></button>
+        <main class="wrapper">
+            <!------------ Hero Section ------------>
+                <section class="hero-section" id="home">
+                    <div class="hero-highlight">
+                        <div class="hero-name">
+                            <span>Kim Joshua Delos Reyes</span>
+                        </div>
+                        <div class="hero-text">
+                            <p>I'm <span class="animated-text"></span></p>
+                        </div>
+                        <div class="hero-text-info">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi vel ipsa dicta deserunt, illum repudiandae explicabo unde, eaque reiciendis, eum distinctio laboriosam aspernatur ad sapiente ipsam minus expedita earum maiores?</p>
+                        </div>
+                        <div class="hero-text-button">
+                            <p>I need a </p>
+                            <div class="media-div">
+                                <button class="btn btn-blue" id="site-button">Website</button>
+                                <p>or </p>
+                                <button class="btn" id="dev-button">Developer</button>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <div class="icon linkedin"><i class="uil uil-linkedin-alt" ></i></a></div>
+                            <div class="icon github"><i class="uil uil-github-alt"></i></i></div>
                         </div>
                     </div>
+                    <div class="hero-image-section">
+                        <div class="hero-image">
+                            <img src="/img/logo.jpeg" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="scroll-indicator">
+                        <a href="#about" class="scroll-btn"><i class="uil uil-mouse-alt"></i><span>Scroll Down</span></a>
+                    </div>
+                </section>
+            <!------------ About Section ------------>
+                <section class="section" id="about">
+                    <div class="top-header">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-info">
+                                <h3>My Introduction</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aut quia obcaecati exercitationem ipsam minima accusantium odit error, molestias nobis temporibus nulla in fugit repudiandae sit officiis, recusandae enim possimus.</p>
+                                <div class="about-button">
+                                    <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="skills-info">
+                                <div class="skills-header">
+                                    <h3>Languages</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Python</span>
+                                    <span>SQL</span>
+                                    <span>Bash</span>
+                                </div>
+                            </div>
+                            <div class="skills-info">
+                                <div class="skills-header">
+                                    <h3>Frameworks</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>Express</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="skills-info">
+                                <div class="skills-header">
+                                    <h3>Libraries</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>React.js</span>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                            <div class="skills-info">
+                                <div class="skills-header">
+                                    <h3>Developer Tools</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!------------ Projects Section ------------>
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
                 </div>
-                <div class="col">
-                    <div class="skills-info">
-                        <div class="skills-header">
-                            <h3>Languages</h3>
+                <div class="project-container">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/placeholder.png" alt="project">
+                            <div class="project-icons">
+                                <div class="icon"><i class="uil uil-arrow"></i></div>
+                                <div class="icon"><i class="uil uil-eye"></i></i></div>
+                            </div>
                         </div>
-                        <div class="skills-list">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>Bash</span>
-                        </div>
+                        <span>Project Name #1</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam, a quam odit earum veniam tempore error commodi dolor dicta aspernatur voluptate nesciunt.</p>
                     </div>
-                    <div class="skills-info">
-                        <div class="skills-header">
-                            <h3>Frameworks</h3>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/placeholder.png" alt="project">
+                            <div class="project-icons">
+                                <div class="icon"><i class="uil uil-arrow"></i></div>
+                                <div class="icon"><i class="uil uil-eye"></i></i></div>
+                            </div>
                         </div>
-                        <div class="skills-list">
-                            <span>Express</span>
-                            <span>Bootstrap</span>
-                        </div>
+                        <span>Project Name #2</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam, a quam odit earum veniam tempore error commodi dolor dicta aspernatur voluptate nesciunt.</p>
                     </div>
-                    <div class="skills-info">
-                        <div class="skills-header">
-                            <h3>Libraries</h3>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/placeholder.png" alt="project">
+                            <div class="project-icons">
+                                <div class="icon"><i class="uil uil-arrow"></i></div>
+                                <div class="icon"><i class="uil uil-eye"></i></i></div>
+                            </div>
                         </div>
-                        <div class="skills-list">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                    <div class="skills-info">
-                        <div class="skills-header">
-                            <h3>Developer Tools</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Git</span>
-                        </div>
+                        <span>Project Name #3</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam, a quam odit earum veniam tempore error commodi dolor dicta aspernatur voluptate nesciunt.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-    <!------------ Projects Section ------------>
-    <section class="section" id="projects">
-        <div class="top-header">
-            <h1>Projects</h1>
-        </div>
-        <div class="project-container">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/placeholder.png" alt="project">
-                    <div class="project-icons">
-                        <div class="icon"><i class="uil uil-arrow"></i></div>
-                        <div class="icon"><i class="uil uil-eye"></i></i></div>
+            </section>
+            <!------------ Contact Section ------------>
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-arrow-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: kimjoshuadr@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> Cp: (+63) 992 652 1204</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form class="form-control" id="contact-form" action="https://formspree.io/f/xkndnerg" method="POST">
+                            <div class="form-inputs">
+                                <input type="text" name="Name" class="input-field" placeholder="Full Name" required>
+                                <input type="email" name="Email" class="input-field" placeholder="Email" required>
+                            </div>
+                            <div class="text-area">
+                                <textarea name="Message" placeholder="Message" id="message-box"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <span>Project Name #1</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam, a quam odit earum veniam tempore error commodi dolor dicta aspernatur voluptate nesciunt.</p>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/placeholder.png" alt="project">
-                    <div class="project-icons">
-                        <div class="icon"><i class="uil uil-arrow"></i></div>
-                        <div class="icon"><i class="uil uil-eye"></i></i></div>
-                    </div>
-                </div>
-                <span>Project Name #2</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam, a quam odit earum veniam tempore error commodi dolor dicta aspernatur voluptate nesciunt.</p>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/placeholder.png" alt="project">
-                    <div class="project-icons">
-                        <div class="icon"><i class="uil uil-arrow"></i></div>
-                        <div class="icon"><i class="uil uil-eye"></i></i></div>
-                    </div>
-                </div>
-                <span>Project Name #3</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam, a quam odit earum veniam tempore error commodi dolor dicta aspernatur voluptate nesciunt.</p>
-            </div>
-        </div>
-    </section>
-    <!------------ Contact Section ------------>
-    <section class="section" id="contact">
-        <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-arrow-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: kimjoshuadr@gmai.com</p>
-                    <p><i class="uil uil-phone"></i> Cp: +63 992 652 1204</p>
-                </div>
-            </div>
-            <div class="col">
-                <form class="form-control" id="contact-form" action="https://formspree.io/f/xkndnerg" method="POST">
-                    <div class="form-inputs">
-                        <input type="text" name="Name" class="input-field" placeholder="Full Name" required>
-                        <input type="email" name="Email" class="input-field" placeholder="Email" required>
-                    </div>
-                    <div class="text-area">
-                        <textarea name="Message" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    </main>
+            </section>
+        </main>
     <!------------ Footer ------------>
-    <footer>
+        <footer>
         <div class="top-footer">
             <p>Kim Joshua .</p>
         </div>
@@ -235,13 +237,14 @@
             </ul>
         </div>
         <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-github-alt"></i></i></div>
+            <div class="icon linkedin"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon github"><i class="uil uil-github-alt"></i></div>
         </div>
         <div class="bottom-footer">
             <p>Copyright &copy; <a href="#home">Kim Joshua</a> - All rights reserved</p>
         </div>
-    </footer>
+        </footer>
+    </div>
     <!------------ external JS link ------------>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
