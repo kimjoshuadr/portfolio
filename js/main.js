@@ -1,7 +1,28 @@
-// button click
-document.querySelector('.uil-bars').addEventListener('click', () => {
-    const navBar = document.querySelector('.nav-bar')
-    navBar.classList.toggle('hidden')
+// listen for click
+Array.from(document.querySelectorAll('.nav-list a, .uil-bars, .icon, .hero-text-button button')).forEach(element => {
+    element.addEventListener('click', () => {
+        // nav menu
+        if (element.classList.contains('uil-bars')) {
+            document.querySelector('.nav-bar').classList.toggle('hidden')
+        }
+        if (element.classList.contains('nav-link')) {
+            document.querySelector('.nav-bar').classList.remove('hidden')
+        }
+        // icon redirect
+        if (element.classList.contains('linkedin')) {
+            window.open(window.open('https://www.linkedin.com/in/kimjoshuadr0907/','mywindow'))
+        } else if (element.classList.contains('github')) {
+            window.open(window.open('https://github.com/kimjoshuadr','mywindow'))
+        }
+        // hero buttons
+        if (element.id === 'site-button') {
+            window.location = '#contact'
+            document.getElementById('message-box').value = "I'm in need of a website, and I'd like to discuss the possibility of working together to bring my vision to life. More details are provided below:\n\n"
+        }  else if (element.id === 'dev-button') {
+            window.location = '#contact'
+            document.getElementById('message-box').value = "I'm currently seeking a developer, and I'm interested in discussing the potential collaboration further. Additional details are outlined below:\n\n"
+        }
+    })
 })
 // scroll effect
 document.addEventListener('scroll', () => {
@@ -9,7 +30,7 @@ document.addEventListener('scroll', () => {
     const lastKnownScrollPosition = window.scrollY
     const navHeader = document.getElementById('header')
 
-    if (lastKnownScrollPosition > 50) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop >  50) {
         navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)"
         navHeader.style.height = "70px"
         navHeader.style.lineHeight = "70px"
