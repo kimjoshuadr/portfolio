@@ -588,11 +588,11 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgb(255, 255, 255, 0.7);
+        background: rgb(11, 12, 16, 0.7);
         backdrop-filter: blur(20px);
         width: 100%;
         min-height: 450px;
-        height: 90vh;
+        height: 100vh;
         transition: 0.3s;
         overflow: hidden;
         text-align: center;
@@ -604,6 +604,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--color-white);
     }
     .hero-section{
         flex-direction: column;
